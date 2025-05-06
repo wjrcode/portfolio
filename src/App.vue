@@ -32,14 +32,24 @@ import ProjectCard from './components/ProjectCard.vue'
   </header>
   <section class="section">
     <h2 class="section__tittle">Projects</h2>
-    <ProjectCard
-      title="Conference ticket generator"
-      image="../ticket-generator-screenshot.png"
-      description="Challenge from Front-end Mentor; It consists of a form, its validation and a ticket page result; Build only with HTML, CSS and JavaScript"
-      gitLink="https://github.com/wjrcode/conference-ticket-generator-main/"
-      siteLink="https://wjrcode.github.io/conference-ticket-generator-main/"
-      color="#F57463"
-    />
+    <div class="section__list">
+      <ProjectCard
+        title="Conference ticket generator"
+        image="../ticket-generator-screenshot.png"
+        description="Challenge from Front-end Mentor; It consists of a form, its validation and a ticket page result; Build only with HTML, CSS and JavaScript"
+        gitLink="https://github.com/wjrcode/conference-ticket-generator-main/"
+        siteLink="https://wjrcode.github.io/conference-ticket-generator-main/"
+        color="#F57463"
+      />
+      <ProjectCard
+        title="Mortgage repayment calculator"
+        image="../calculator-screenshot.png"
+        description="Challenge from Front-end Mentor; It consists of a form, its validation and a ticket page result; Build only with HTML, CSS and JavaScript"
+        gitLink="https://github.com/wjrcode/mortgage-repayment-calculator-main/"
+        siteLink="https://wjrcode.github.io/mortgage-repayment-calculator-main/"
+        color="#D7F3FF"
+      />
+    </div>
   </section>
 </template>
 
@@ -72,13 +82,20 @@ import ProjectCard from './components/ProjectCard.vue'
   margin-bottom: 3rem;
 }
 
+.section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .section__tittle {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.25rem;
 }
 
 @media (min-width: 1024px) {
-  header {
+  .section__list {
+    flex-direction: row;
   }
 }
 </style>
