@@ -35,7 +35,7 @@ import ProjectCard from './components/ProjectCard.vue'
     <div class="section__list">
       <ProjectCard
         title="Conference ticket generator"
-        image="../ticket-generator-screenshot.png"
+        image="./ticket-generator-screenshot.png"
         description="Challenge from Front-end Mentor; It consists of a form, its validation and a ticket page result; Build only with HTML, CSS and JavaScript"
         gitLink="https://github.com/wjrcode/conference-ticket-generator-main/"
         siteLink="https://wjrcode.github.io/conference-ticket-generator-main/"
@@ -43,7 +43,7 @@ import ProjectCard from './components/ProjectCard.vue'
       />
       <ProjectCard
         title="Mortgage repayment calculator"
-        image="../calculator-screenshot.png"
+        image="./calculator-screenshot.png"
         description="Challenge from Front-end Mentor; It consists of a form, its validation and a ticket page result; Build only with HTML, CSS and JavaScript"
         gitLink="https://github.com/wjrcode/mortgage-repayment-calculator-main/"
         siteLink="https://wjrcode.github.io/mortgage-repayment-calculator-main/"
